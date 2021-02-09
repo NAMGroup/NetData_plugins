@@ -59,6 +59,7 @@ prot: is ws (should not be changed)
 ip: should be the IP of the gNodeB we wish to talk to (This could be moved into a conf file)
 gnb_port: Default value (9001) should be OK. Change as required if the GnodeB conf has changed
 '''
+
 #gNodeB
 prot="ws://"
 ip="AMARISOFT_IP_HERE"
