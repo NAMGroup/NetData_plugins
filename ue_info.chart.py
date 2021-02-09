@@ -3,9 +3,7 @@
 # Author: Panagiotis Papaioannou (papajohn-uop) 
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-
 from bases.FrameworkServices.SimpleService import SimpleService
-
 
 #those two imports are required to connect thous websockets
 import websocket
@@ -15,8 +13,6 @@ from websocket import create_connection
 import json
 #debug
 from pprint import pprint
-
-
 
 NETDATA_UPDATE_EVERY=1
 priority = 90000
@@ -89,7 +85,6 @@ charts_to_create= {
        "retx":["dl_retx", "ul_retx"],
        "snr":["pucch1_snr","pusch_snr"]
 }
-
 
 
 
