@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Description: example netdata python.d module
-# Author: Panagiotis Papaioannou (papajohn-uop)
+# Author: Panagiotis Papaioannou (papajohn-uop) 
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 
@@ -65,7 +65,7 @@ gnb_port: Default value (9001) should be OK. Change as required if the GnodeB co
 '''
 #gNodeB
 prot="ws://"
-ip="172.16.100.203"
+ip="AMARISOFT_IP_HERE
 gnb_port=":9001"
 
 '''
