@@ -1,0 +1,34 @@
+Instructions to enable NAM netdata plugins for Amarisoft.
+
+
++------------------+                              +----------------------+                                              
+|                  |                              |     NETDATA          |                                               
+|                  |                              |                      |                                              
+| gNodeB      		 |                              |                      |                                              
+|                  |                          		|   +----------+       |                                              
+|               	 |<---------------------------->|   |  custom  |       |                                              
+|                  |         websocket            |   |	plugin   |       |                                              
+|          			   |<---------------------------->|   +----------+       |                                               
++------------------+                              +----------------------+
+
+
+
+1.	-Install Netdata
+		bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+2.	-Install websocket library for python
+    	sudo apt-get install -y python-websocket
+3. - Download plugin from NAMGroup github
+         wget https://raw.githubusercontent.com/NAMGroup/NetData_plugins/main/ue_info.chart.py
+4. - Edit downloaded file. 
+          vi  ue_info.chart.py
+          Insert IP of target gNodeB at placeholder. 
+          Look for the line ip="AMARISOFT_IP_HERE" (line ~64)
+5. - Copy file to netdata installation directory (this is the default one)
+          sudo cp ue_info.chart.py /usr/libexec/netdata/python.d/
+6. - Restart netdata
+          sudo systemctl restart netdata
+7. - Check Netdata web ui
+       http://{IP_OF_NETDATA_MACHINE}:19999
+	   
+If more plugins are available repeat steps 3-7 and substitute ue_info with the new plugin name.
+
