@@ -65,7 +65,7 @@ gnb_port: Default value (9001) should be OK. Change as required if the GnodeB co
 '''
 #gNodeB
 prot="ws://"
-ip="AMARISOFT_IP_HERE
+ip="AMARISOFT_IP_HERE"
 gnb_port=":9001"
 
 '''
