@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*- 
 # Description: example netdata python.d module
 # Author: Panagiotis Papaioannou (papajohn-uop) 
 # SPDX-License-Identifier: GPL-3.0-or-later
